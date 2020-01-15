@@ -17,6 +17,7 @@ class PhotoPreviewPage: UIViewController,FaceAutoShotDelegate {
                     "x-api-key": "here is api key"]
     let api_url =  "https://l3p6lrnf73.execute-api.ap-northeast-1.amazonaws.com/dev/result"
     
+    @IBOutlet var btn_analysis: UIButton!
     
     @IBOutlet weak var previewImage: UIImageView!
 
@@ -37,6 +38,13 @@ class PhotoPreviewPage: UIViewController,FaceAutoShotDelegate {
         activityIndicatorView.color = .white
         view.addSubview(activityIndicatorView)
         
+        // check api key
+        if api_header["x-api-key"] == "here is api key"{
+            btn_analysis.isEnabled = false
+            let dialog = UIAlertController(title: "invalid api key", message: "please input correct api key in http header.", preferredStyle: .alert)
+            dialog.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(dialog, animated: true, completion: nil)
+        }
         
         guard let _output_path = self.output_path else{
             return

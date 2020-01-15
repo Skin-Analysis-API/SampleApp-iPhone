@@ -51,6 +51,7 @@
                         <viewLayoutGuide key="safeArea" id="u9W-2e-abL"/>
                     </view>
                     <connections>
+                        <outlet property="btn_analysis" destination="FkN-dI-izk" id="REI-sK-zn8"/>
                         <outlet property="previewImage" destination="Vav-s3-Bsl" id="CkD-EL-PR4"/>
                     </connections>
                 </viewController>
