@@ -1,0 +1,16 @@
+PODS:
+  - FaceAutoShot (0.0.1)
+
+DEPENDENCIES:
+  - FaceAutoShot
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FaceAutoShot
+
+SPEC CHECKSUMS:
+  FaceAutoShot: 4d17fdee2e29aa1391a6e18eec4d74171744d1ed
+
+PODFILE CHECKSUM: bbe2989a9d8f238dd0ea6981f7e82a94f0d4a4da
+
+COCOAPODS: 1.7.0
