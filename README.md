@@ -33,6 +33,7 @@ SkinAnalysisAPI can analysis face skin condition from face image only, then also
 ### Response
 
 **basic**
+
 |item|contents|
 |----|----|
 |http version|1.1|
@@ -40,12 +41,14 @@ SkinAnalysisAPI can analysis face skin condition from face image only, then also
 |method|POST|
 
 **header**
+
 |item|contents|
 |----|----|
 |Content-Type|application/json|
 |x-api-key|input your api key|
 
 **body**
+
 |item|type|contents|
 |----|----|----|
 |image|string|base64 encoded image file|
@@ -53,17 +56,21 @@ SkinAnalysisAPI can analysis face skin condition from face image only, then also
 |device_code|string|device code to identify device|
 
 ### Response
+
 **header**
+
 |item|contents|
 |----|----|
 |Content-Type|application/html|
 
 **response class: 200**
+
 |item|contents|
 |----|----|
 |return|result page html file|
 
 **response class: 4xx**
+
 |item|contents|
 |----|----|
 |return|error page html file|
